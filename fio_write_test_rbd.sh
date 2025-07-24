@@ -12,7 +12,7 @@ else
 fi
 
 # Directory to test in (change if needed)
-TEST_DIR="home/jovyan"
+TEST_DIR="/home/jovyan"
 
 cd "$TEST_DIR"
 
