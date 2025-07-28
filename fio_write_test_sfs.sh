@@ -23,15 +23,12 @@ fio --name=write_throughput \
     --size=100G \
     --time_based \
     --runtime=30m \
-    --ramp_time=2s \
     --ioengine=libaio \
     --direct=1 \
     --verify=crc32c \
     --bs=1M \
-    --iodepth=64 \
-    --rw=write \
+    --iodepth=1 \
+    --rw=readwrite \
     --group_reporting=1 \
-    --iodepth_batch_submit=64 \
-    --iodepth_batch_complete_max=64 \
     --continue_on_error=none
 

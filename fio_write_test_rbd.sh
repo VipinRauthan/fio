@@ -28,10 +28,8 @@ fio --name=write_throughput \
     --direct=1 \
     --verify=crc32c \
     --bs=1M \
-    --iodepth=64 \
-    --rw=write \
+    --iodepth=1 \
+    --rw=readwrite \
     --group_reporting=1 \
-    --iodepth_batch_submit=64 \
-    --iodepth_batch_complete_max=64 \
     --continue_on_error=none
 
